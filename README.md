@@ -6,5 +6,6 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Ao recuperar uma tarefa, ela deverá trazer os status conforme o seu tipo.
 * Ao incluir uma tarefa do tipo 1. Data, a data prevista de execução deverá ser sempre igual ou superior a data atual.
 ## Commit semana 2
+* Reorganização do código.
 ## Commit semana 3
 ## Commit semana 4
