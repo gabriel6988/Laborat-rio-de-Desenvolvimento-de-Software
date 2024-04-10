@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6b19b34-85e0-4611-9c8b-1a8aaf178eb7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/entity/Task.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2eK7Ao8e9Q5bOPBfgcVLf5iQHs2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "JUnit.Roteiro01ApplicationTests.executor": "Run",
+    "JUnit.TaskControllerTests.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTask.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskDATA.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskLIVRE.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskPRAZO.executor": "Run",
+    "JUnit.TaskControllerTests.testDeleteCompletedTasks.executor": "Run",
+    "JUnit.TaskControllerTests.testListAllTasks.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Roteiro01Application.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java",
+    "last_opened_file_path": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.labdessoft.roteiro01.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.labdessoft.roteiro01" />
+      <recent name="com.labdessoft.roteiro01.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TaskControllerTests">
+    <configuration name="TaskControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerTests.testCreateTaskDATA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="METHOD_NAME" value="testCreateTaskDATA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerTests.testCreateTaskLIVRE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="METHOD_NAME" value="testCreateTaskLIVRE" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerTests.testCreateTaskPRAZO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="METHOD_NAME" value="testCreateTaskPRAZO" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerTests.testListAllTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="METHOD_NAME" value="testListAllTasks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Roteiro01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.labdessoft.roteiro01.Roteiro01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TaskControllerTests" />
+        <item itemvalue="JUnit.TaskControllerTests.testListAllTasks" />
+        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskLIVRE" />
+        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskPRAZO" />
+        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskDATA" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6b19b34-85e0-4611-9c8b-1a8aaf178eb7" name="Changes" comment="" />
+      <created>1711641277293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711641277293</updated>
+      <workItem from="1711641278342" duration="2884000" />
+      <workItem from="1711654054561" duration="2028000" />
+      <workItem from="1711667305717" duration="1419000" />
+      <workItem from="1711717043262" duration="207000" />
+      <workItem from="1711723966876" duration="2432000" />
+      <workItem from="1711755254508" duration="6064000" />
+      <workItem from="1711824624350" duration="10249000" />
+      <workItem from="1711894390415" duration="1321000" />
+      <workItem from="1711919901403" duration="862000" />
+      <workItem from="1711920784127" duration="3977000" />
+      <workItem from="1711924792316" duration="1545000" />
+      <workItem from="1711926362719" duration="2742000" />
+      <workItem from="1711930889669" duration="692000" />
+      <workItem from="1712411495111" duration="5556000" />
+      <workItem from="1712420867945" duration="7278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
