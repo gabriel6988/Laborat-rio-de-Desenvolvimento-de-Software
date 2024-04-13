@@ -95,9 +95,22 @@ public class TaskController {
         }
     }
 
-    // Delete completed tasks
+    // Excluir tasks;
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Deletar uma tarefa específica")
+    public ResponseEntity<String> deleteTask(@PathVariable long id) {
+        Task task = taskRepository.findById(id).orElse(null);
+        if (task != null) {
+            taskRepository.delete(task);
+            return ResponseEntity.ok("Tarefa deletada com sucesso.");
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    // Excluir tasks concluídas;
     @DeleteMapping("/completed")
-    @Operation(summary = "Deletar tarefas")
+    @Operation(summary = "Deletar tarefas concluídas")
     public void deleteCompletedTasks() {
         // Get all tasks
         List<Task> allTasks = taskRepository.findAll();

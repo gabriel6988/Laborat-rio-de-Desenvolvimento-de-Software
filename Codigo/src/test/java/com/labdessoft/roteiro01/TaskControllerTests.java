@@ -162,6 +162,26 @@ public class TaskControllerTests {
         assertThat(existingTask.isCompleted()).isTrue();
     }
 
+    // Teste para deletar uma única tarefa;
+    @Test
+    public void testDeleteTask() throws Exception{
+        Task existingTask = new Task();
+        existingTask.setId(1L);
+        existingTask.setDescription("Existing Task");
+        existingTask.setCompleted(false);
+        existingTask.setTaskType(Task.TaskType.LIVRE);
+        existingTask.setPriority(Task.Priority.MEDIA);
+
+        // Setup e Invocação;
+        when(taskRepository.findById(1L)).thenReturn(Optional.of(existingTask));
+        ResponseEntity<String> responseEntity = taskController.deleteTask(1L);
+
+        // Verificação;
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(responseEntity.getBody()).isEqualTo("Tarefa deletada com sucesso.");
+        verify(taskRepository, times(1)).delete(existingTask);
+    }
+
     // Teste para deletar tarefas concluídas;
     @Test
     public void testDeleteCompletedTasks() throws Exception {
