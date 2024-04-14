@@ -9,5 +9,6 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Reorganização do código.
 * Diagrama de Casos de uso atualizado.
 * Protótipos de Tela.
+* Descrição dos Casos de Uso atualizados.
 ## Commit semana 3
 ## Commit semana 4
