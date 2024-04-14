@@ -39,40 +39,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.generated-requests | #1.executor": "Run",
-    "HTTP Request.generated-requests | #2.executor": "Run",
-    "JUnit.Roteiro01ApplicationTests.executor": "Run",
-    "JUnit.TaskControllerTests.executor": "Run",
-    "JUnit.TaskControllerTests.testCreateTask.executor": "Run",
-    "JUnit.TaskControllerTests.testCreateTaskDATA.executor": "Run",
-    "JUnit.TaskControllerTests.testCreateTaskLIVRE.executor": "Run",
-    "JUnit.TaskControllerTests.testCreateTaskPRAZO.executor": "Run",
-    "JUnit.TaskControllerTests.testDeleteCompletedTasks.executor": "Run",
-    "JUnit.TaskControllerTests.testListAllTasks.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Roteiro01Application.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java",
-    "last_opened_file_path": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Roteiro01ApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testCreateTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testCreateTaskDATA.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testCreateTaskLIVRE.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testCreateTaskPRAZO.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testDeleteCompletedTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testDeleteTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskControllerTests.testListAllTasks.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Roteiro01Application.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcio/Downloads/Laboratorio-de-Desenvolvimento-de-Software-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.labdessoft.roteiro01.controller" />
@@ -94,22 +95,6 @@
       <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
       <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskControllerTests.testCreateTaskDATA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="roteiro01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
-      <option name="METHOD_NAME" value="testCreateTaskDATA" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +131,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaskControllerTests.testDeleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="METHOD_NAME" value="testDeleteTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaskControllerTests.testListAllTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="roteiro01" />
       <extension name="coverage">
@@ -172,10 +173,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TaskControllerTests" />
+        <item itemvalue="JUnit.TaskControllerTests.testDeleteTask" />
         <item itemvalue="JUnit.TaskControllerTests.testListAllTasks" />
         <item itemvalue="JUnit.TaskControllerTests.testCreateTaskLIVRE" />
         <item itemvalue="JUnit.TaskControllerTests.testCreateTaskPRAZO" />
-        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskDATA" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +203,15 @@
       <workItem from="1711930889669" duration="692000" />
       <workItem from="1712411495111" duration="5556000" />
       <workItem from="1712420867945" duration="7278000" />
+      <workItem from="1712714556092" duration="33000" />
+      <workItem from="1712851906809" duration="360000" />
+      <workItem from="1712853075547" duration="784000" />
+      <workItem from="1712854054581" duration="176000" />
+      <workItem from="1712930356081" duration="2231000" />
+      <workItem from="1712932814823" duration="60000" />
+      <workItem from="1713031343017" duration="168000" />
+      <workItem from="1713048629195" duration="64000" />
+      <workItem from="1713052765561" duration="392000" />
     </task>
     <servers />
   </component>
