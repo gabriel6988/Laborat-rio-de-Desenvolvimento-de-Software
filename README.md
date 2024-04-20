@@ -11,4 +11,9 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Protótipos de Tela.
 * Descrição dos Casos de Uso atualizados.
 ## Commit semana 3
+* Refatoração e desenvolvimento do código.
+** Criação do arquivo Service.
+** Alterando o Controller para usar o Service.
+** Tornando task em uma classe abstrata.
+** Adicionando subclasses para a classe abstrata task.
 ## Commit semana 4
