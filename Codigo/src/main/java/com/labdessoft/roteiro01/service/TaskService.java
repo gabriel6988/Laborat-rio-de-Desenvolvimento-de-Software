@@ -1,3 +1,4 @@
+
 package com.labdessoft.roteiro01.service;
 
 import com.labdessoft.roteiro01.entity.*;
@@ -31,6 +32,7 @@ public class TaskService {
     // Função para listar todas as tarefas da lista;
     public List<Task> listAllTasks() {
         List<Task> tasks = taskRepository.findAll();
+
         for (Task task : tasks) {
             task.setStatus(getTaskStatus(task));
         }

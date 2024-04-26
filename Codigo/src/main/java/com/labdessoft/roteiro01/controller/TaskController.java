@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import java.util.List;
 
 @RestController
-@RequestMapping("/task")
+//@RequestMapping("/vi")
 public class TaskController {
 
     private final TaskService taskService;
@@ -30,7 +30,7 @@ public class TaskController {
         }
     }
 
-    @GetMapping("/")
+    @GetMapping("/task")
     @Operation(summary = "Lista todas as tarefas da lista")
     public List<Task> listAllTasks() {
         return taskService.listAllTasks();// Função para listar todas as tarefas;
@@ -64,4 +64,5 @@ public class TaskController {
     public void deleteCompletedTasks() {
         taskService.deleteCompletedTasks();// Função para deletar todas as tarefas completadas;
     }
+
 }
