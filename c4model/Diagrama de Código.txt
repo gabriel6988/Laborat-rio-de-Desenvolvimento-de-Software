@@ -1,0 +1,37 @@
+@startuml
+!define RECTANGLE rectangle
+
+title Diagrama de código
+
+class Task {
+    - long id
+    - String description
+    - boolean completed
+    - Priority priority
+    - LocalDate creationDate
+    - String status
+    + setId(long id)
+    + getId()
+    enum Priority
+}
+
+class TaskData extends Task {
+    - LocalDate dueDate
+    + setDueDate(LocalDate dueDate)
+    + getDueDate()
+}
+
+class TaskLivre extends Task {
+}
+
+class TaskPrazo extends Task {
+    - int deadlineInDays
+    + setDeadlineInDays(int deadlineInDays)
+    + getDeadlineInDays()
+}
+
+Task <|-- TaskData
+Task <|-- TaskLivre
+Task <|-- TaskPrazo
+
+@enduml

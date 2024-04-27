@@ -1,0 +1,28 @@
+@startuml
+!define RECTANGLE rectangle
+
+title Diagrama de Componentes
+
+RECTANGLE "Roteiro01 Application" {
+    RECTANGLE "TaskController" {
+        :addTask:
+        :listAllTasks:
+        :completeTask:
+        :updateTask:
+        :deleteTask:
+        :deleteCompletedTasks:
+    }
+
+    RECTANGLE "TaskService" {
+        :addTask:
+        :listAllTasks:
+        :completeTask:
+        :updateTask:
+        :deleteTask:
+        :deleteCompletedTasks:
+    }
+}
+
+TaskController --> TaskService: Chama métodos
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+title Diagrama de contêiner
+
+rectangle "Roteiro01 Application" {
+    :TaskController:
+    :TaskService:
+    :Task entities:
+}
+
+database "H2 Database" {
+    :Task Table:
+}
+
+actor User
+
+User --> TaskController: Interage com
+TaskController --> TaskService: Chama métodos
+TaskService --> "H2 Database": Acessa
+
+@enduml

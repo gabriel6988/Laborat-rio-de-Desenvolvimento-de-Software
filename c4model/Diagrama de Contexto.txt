@@ -1,0 +1,12 @@
+@startuml
+!define RECTANGLE rectangle
+
+title Diagrama de Contexto
+
+RECTANGLE "Roteiro01 Application" {
+    :User: 
+}
+
+User --> Roteiro01Application: Interage com
+
+@enduml
