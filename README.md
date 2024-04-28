@@ -20,3 +20,4 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 ## Commit semana 4
 * Diagramas da solução de backend construído, seguindo o padrão C4 Model na linguagem PlantUML.
 * Implementação do Banco de dados.
+* Documentação dos endpoints adotando swaggers.
