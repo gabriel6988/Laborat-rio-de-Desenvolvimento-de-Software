@@ -12,16 +12,17 @@ import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import java.time.LocalDate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.mockito.ArgumentCaptor;
 import static org.mockito.Mockito.*;
-import static org.assertj.core.api.Assertions.assertThat;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.ArrayList;
-import org.mockito.ArgumentCaptor;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -32,13 +33,14 @@ public class TaskTests {
 
     @MockBean
     private TaskRepository taskRepository;
+
     private TaskData taskData;
     private TaskPrazo taskPrazo;
     private TaskLivre taskLivre;
 
     @BeforeAll
     public void setUp() {
-        // Cria uma instância de cada subclasse de Task;
+        // Criando instâncias de cada subclasse de Task
         taskData = new TaskData();
         taskData.setId(1L);
         taskData.setDescription("Exemplo 1");
@@ -60,130 +62,134 @@ public class TaskTests {
         taskLivre.setPriority(Task.Priority.BAIXA);
     }
 
-    // Teste para adicionar uma task "DATA" na lista;
+    // Teste para adicionar uma tarefa TaskData
     @Test
-    public void testAddTaskDATA() throws Exception {
+    public void testAddTaskData() {
         when(taskRepository.save(any(Task.class))).thenReturn(taskData);
 
-        ResponseEntity<String> responseEntity = taskController.addTask(taskData);
-        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-        assertEquals("Tarefa adicionada com sucesso.", responseEntity.getBody());
+        ResponseEntity<Task> response = taskController.createTask(taskData);
+
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertThat(response.getBody()).isEqualTo(taskData);
 
         verify(taskRepository, times(1)).save(taskData);
     }
 
-    // Teste para adicionar uma task "PRAZO" na lista;
+    // Teste para adicionar uma tarefa TaskPrazo
     @Test
-    public void testAddTaskPRAZO() throws Exception {
+    public void testAddTaskPrazo() {
         when(taskRepository.save(any(Task.class))).thenReturn(taskPrazo);
 
-        ResponseEntity<String> responseEntity = taskController.addTask(taskPrazo);
-        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-        assertEquals("Tarefa adicionada com sucesso.", responseEntity.getBody());
+        ResponseEntity<Task> response = taskController.createTask(taskPrazo);
+
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertThat(response.getBody()).isEqualTo(taskPrazo);
 
         verify(taskRepository, times(1)).save(taskPrazo);
     }
 
-    // Teste para adicionar uma task "LIVRE" na lista;
+    // Teste para adicionar uma tarefa TaskLivre
     @Test
-    public void testAddTaskLIVRE() throws Exception {
+    public void testAddTaskLivre() {
         when(taskRepository.save(any(Task.class))).thenReturn(taskLivre);
 
-        ResponseEntity<String> responseEntity = taskController.addTask(taskLivre);
-        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-        assertEquals("Tarefa adicionada com sucesso.", responseEntity.getBody());
+        ResponseEntity<Task> response = taskController.createTask(taskLivre);
+
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertThat(response.getBody()).isEqualTo(taskLivre);
 
         verify(taskRepository, times(1)).save(taskLivre);
     }
 
-    // Teste para verificar o READ, obter uma lista com todas as tarefas;
+    // Teste para verificar a lista de todas as tarefas
     @Test
-    public void testListAllTasks() throws Exception {
-        when(taskRepository.findAll()).thenReturn(List.of(taskData, taskPrazo, taskLivre));
-        assertThat(taskController.listAllTasks()).contains(taskData, taskPrazo, taskLivre);
+    public void testGetAllTasks() {
+        List<Task> tasks = List.of(taskData, taskPrazo, taskLivre);
+        when(taskRepository.findAll()).thenReturn(tasks);
+
+        ResponseEntity<List<Task>> response = taskController.getAllTasks();
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertThat(response.getBody()).contains(taskData, taskPrazo, taskLivre);
     }
 
-    // Teste de um UPDATE de uma task;
+    // Teste para concluir uma tarefa
     @Test
-    public void testUpdateTask() throws Exception {
-        // Criando uma nova tarefa e a sua versão atualizada;
-        TaskPrazo existingTask;
-        existingTask = new TaskPrazo();
+    public void testCompleteTask() {
+        when(taskRepository.findById(1L)).thenReturn(Optional.of(taskData));
+
+        ResponseEntity<Void> response = taskController.completeTask(1L);
+
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
+        assertThat(taskData.isCompleted()).isTrue();
+        verify(taskRepository, times(1)).save(taskData);
+    }
+
+    // Teste para atualizar uma tarefa
+    @Test
+    public void testUpdateTask() {
+        TaskPrazo existingTask = new TaskPrazo();
         existingTask.setId(4L);
-        existingTask.setDescription("Existing Task");
+        existingTask.setDescription("Tarefa existente");
         existingTask.setCompleted(false);
         existingTask.setPriority(Task.Priority.MEDIA);
         existingTask.setDeadlineInDays(10);
 
-        TaskPrazo updatedTask;
-        updatedTask = new TaskPrazo();
+        TaskPrazo updatedTask = new TaskPrazo();
         updatedTask.setId(4L);
-        updatedTask.setDescription("Updated Task");
+        updatedTask.setDescription("Tarefa atualizada");
         updatedTask.setCompleted(false);
         updatedTask.setPriority(Task.Priority.ALTA);
         updatedTask.setDeadlineInDays(8);
 
+        // Configura o mock para retornar a tarefa existente
         when(taskRepository.findById(4L)).thenReturn(Optional.of(existingTask));
 
-        // Invocando o método updateTask;
-        taskController.updateTask(4L, updatedTask);
+        // Invoca o método de atualização
+        ResponseEntity<Task> response = taskController.updateTask(4L, updatedTask);
 
-        // Captor para capturar a tarefa salva;
+        // Verifica o código de resposta HTTP
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+
+        // Captura a tarefa salva
         ArgumentCaptor<Task> captor = ArgumentCaptor.forClass(Task.class);
         verify(taskRepository, times(1)).save(captor.capture());
+
+        // Verifica se a tarefa salva é igual à tarefa atualizada
         Task savedTask = captor.getValue();
+        assertThat(savedTask.getId()).isEqualTo(updatedTask.getId());
+        assertThat(savedTask.getDescription()).isEqualTo(updatedTask.getDescription());
+        assertThat(savedTask.getPriority()).isEqualTo(updatedTask.getPriority());
+        assertThat(savedTask).isEqualTo(updatedTask);
 
-        if (savedTask instanceof TaskPrazo savedTaskPrazo) {
-            // Verifique se a tarefa salva corresponde à tarefa atualizada;
-            assertEquals(updatedTask.getId(), savedTask.getId());
-            assertEquals(updatedTask.getDescription(), savedTask.getDescription());
-            assertEquals(updatedTask.getPriority(), savedTask.getPriority());
-            assertEquals(updatedTask.getDeadlineInDays(), savedTaskPrazo.getDeadlineInDays());
-        } else {
-            // Caso a task salva não seja igual a task atualizada;
-            throw new AssertionError("A tarefa salva não é uma instância TaskPrazo");
-        }
+        // Verifica o corpo da resposta
+        assertThat(response.getBody()).isEqualTo(savedTask);
     }
 
-    // Teste para fazer um update para completar a task.
+    // Teste para excluir uma tarefa específica
     @Test
-    public void testCompleteTask() throws Exception {
+    public void testDeleteTask() {
         when(taskRepository.findById(1L)).thenReturn(Optional.of(taskData));
 
-        taskController.completeTask(1L);// Marcar a task como completa;
+        ResponseEntity<Void> response = taskController.deleteTask(1L);
 
-        assertThat(taskData.isCompleted()).isTrue();
-    }
-
-    // Teste para deletar uma única tarefa;
-    @Test
-    public void testDeleteTask() throws Exception{
-
-        // Setup e Invocação;
-        when(taskRepository.findById(1L)).thenReturn(Optional.of(taskData));
-        ResponseEntity<String> responseEntity = taskController.deleteTask(1L);
-
-        // Verificação;
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(responseEntity.getBody()).isEqualTo("Tarefa deletada com sucesso.");
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
         verify(taskRepository, times(1)).delete(taskData);
     }
 
-    // Teste para deletar tarefas concluídas;
+    // Teste para excluir tarefas concluídas
     @Test
-    public void testDeleteCompletedTasks() throws Exception {
-        // Criando novas Tarefas;
-        TaskLivre completedTask;
-        completedTask = new TaskLivre();
+    public void testDeleteCompletedTasks() {
+        // Criando tarefas concluídas e não concluídas
+        TaskLivre completedTask = new TaskLivre();
         completedTask.setId(4L);
-        completedTask.setDescription("Completed Task");
+        completedTask.setDescription("Tarefa concluída");
         completedTask.setCompleted(true);
         completedTask.setPriority(Task.Priority.BAIXA);
 
-        TaskLivre uncompletedTask;
-        uncompletedTask = new TaskLivre();
+        TaskLivre uncompletedTask = new TaskLivre();
         uncompletedTask.setId(5L);
-        uncompletedTask.setDescription("Uncompleted Task");
+        uncompletedTask.setDescription("Tarefa não concluída");
         uncompletedTask.setCompleted(false);
         uncompletedTask.setPriority(Task.Priority.ALTA);
 
@@ -193,11 +199,10 @@ public class TaskTests {
 
         when(taskRepository.findAll()).thenReturn(tasks);
 
-        taskController.deleteCompletedTasks();
+        ResponseEntity<Void> response = taskController.deleteCompletedTasks();
 
-        // Verifica se delete() é chamado com a tarefa concluída;
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
         verify(taskRepository, times(1)).delete(completedTask);
-        // Verifica se delete() nunca é chamado com a tarefa incompleta;
         verify(taskRepository, never()).delete(uncompletedTask);
     }
 }

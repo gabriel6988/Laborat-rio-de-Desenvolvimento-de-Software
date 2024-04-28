@@ -1,15 +1,21 @@
 package com.labdessoft.roteiro01.controller;
 
-import com.labdessoft.roteiro01.entity.*;
+import com.labdessoft.roteiro01.entity.Task;
 import com.labdessoft.roteiro01.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
 import java.util.List;
 
 @RestController
-//@RequestMapping("/vi")
+@RequestMapping("/api/tasks")
 public class TaskController {
 
     private final TaskService taskService;
@@ -19,50 +25,54 @@ public class TaskController {
         this.taskService = taskService;
     }
 
+    @Operation(summary = "Cria uma nova tarefa")
+    @ApiResponse(responseCode = "201", description = "Tarefa criada com sucesso",
+            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
     @PostMapping("/")
-    @Operation(summary = "Cadastra tarefas")
-    public ResponseEntity<String> addTask(@RequestBody Task task) {
-        String response = taskService.addTask(task);// Função para adicionar a tarefa;
-        if (response.startsWith("Erro")) {
-            return ResponseEntity.badRequest().body(response);
-        } else {
-            return ResponseEntity.ok(response);
-        }
+    public ResponseEntity<Task> createTask(@RequestBody Task task) {
+        Task createdTask = taskService.addTask(task).getBody();
+        return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
     }
 
-    @GetMapping("/task")
-    @Operation(summary = "Lista todas as tarefas da lista")
-    public List<Task> listAllTasks() {
-        return taskService.listAllTasks();// Função para listar todas as tarefas;
+    @Operation(summary = "Lista todas as tarefas")
+    @ApiResponse(responseCode = "200", description = "Lista de tarefas retornada com sucesso",
+            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
+    @GetMapping("/")
+    public ResponseEntity<List<Task>> getAllTasks() {
+        List<Task> tasks = taskService.listAllTasks().getBody();
+        return ResponseEntity.ok(tasks);
     }
 
-    @PutMapping("/{id}/completed")
-    @Operation(summary = "Completar tarefas")
-    public void completeTask(@PathVariable long id) {
-        taskService.completeTask(id);// Função para marcar a tarefa como completada;
+    @Operation(summary = "Marca uma tarefa como concluída")
+    @ApiResponse(responseCode = "204", description = "Tarefa marcada como concluída")
+    @PatchMapping("/{id}/completed")
+    public ResponseEntity<Void> completeTask(@PathVariable long id) {
+        taskService.completeTask(id);
+        return ResponseEntity.noContent().build();
     }
 
+    @Operation(summary = "Atualiza uma tarefa existente")
+    @ApiResponse(responseCode = "200", description = "Tarefa atualizada com sucesso",
+            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
     @PutMapping("/{id}")
-    @Operation(summary = "Editar tarefas")
-    public void updateTask(@PathVariable long id, @RequestBody Task updatedTask) {
-        taskService.updateTask(id, updatedTask);// Função para editar a tarefa;
+    public ResponseEntity<Task> updateTask(@PathVariable long id, @RequestBody Task updatedTask) {
+        Task task = taskService.updateTask(id, updatedTask).getBody();
+        return ResponseEntity.ok(task);
     }
 
+    @Operation(summary = "Exclui uma tarefa específica")
+    @ApiResponse(responseCode = "204", description = "Tarefa excluída com sucesso")
     @DeleteMapping("/{id}")
-    @Operation(summary = "Deletar uma tarefa específica")
-    public ResponseEntity<String> deleteTask(@PathVariable long id) {
-        String response = taskService.deleteTask(id);// Função para deletar a tarefa;
-        if (response.startsWith("Erro")) {
-            return ResponseEntity.badRequest().body(response);
-        } else {
-            return ResponseEntity.ok(response);
-        }
+    public ResponseEntity<Void> deleteTask(@PathVariable long id) {
+        taskService.deleteTask(id);
+        return ResponseEntity.noContent().build();
     }
 
+    @Operation(summary = "Exclui todas as tarefas concluídas")
+    @ApiResponse(responseCode = "204", description = "Tarefas concluídas excluídas com sucesso")
     @DeleteMapping("/completed")
-    @Operation(summary = "Deletar tarefas concluídas")
-    public void deleteCompletedTasks() {
-        taskService.deleteCompletedTasks();// Função para deletar todas as tarefas completadas;
+    public ResponseEntity<Void> deleteCompletedTasks() {
+        taskService.deleteCompletedTasks();
+        return ResponseEntity.noContent().build();
     }
-
 }

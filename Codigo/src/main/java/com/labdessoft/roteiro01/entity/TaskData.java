@@ -20,9 +20,7 @@ public class TaskData extends Task{
     }
 
     // Getter e Setter;
-    public LocalDate getDueDate() {
-        return dueDate;
-    }
+    public LocalDate getDueDate() {return dueDate;}
     public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
