@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.labdessoft.roteiro01.TaskTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.473 s <<< FAILURE! -- in com.labdessoft.roteiro01.TaskTests
+com.labdessoft.roteiro01.TaskTests.testUpdateTask -- Time elapsed: 0.028 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: com.labdessoft.roteiro01.entity.TaskPrazo@786e2c5e
+ but was: com.labdessoft.roteiro01.entity.TaskPrazo@4e7d77ec
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at com.labdessoft.roteiro01.TaskTests.testUpdateTask(TaskTests.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

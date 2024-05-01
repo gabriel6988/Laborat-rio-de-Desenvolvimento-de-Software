@@ -51,10 +51,10 @@ public class TaskService {
      *
      * @return ResponseEntity com a lista de tarefas e status HTTP 200 OK.
      */
-    public ResponseEntity<List<Task>> listAllTasks() {
+    public List<Task> listAllTasks() {
         List<Task> tasks = taskRepository.findAll();
         tasks.forEach(this::setTaskStatus);
-        return ResponseEntity.ok(tasks);
+        return tasks;
     }
 
     /**
