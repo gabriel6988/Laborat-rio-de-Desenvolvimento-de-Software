@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/tasks")
+@RequestMapping("/todo/tasks")
 public class TaskController {
 
     private final TaskService taskService;
@@ -37,9 +37,9 @@ public class TaskController {
     @Operation(summary = "Lista todas as tarefas")
     @ApiResponse(responseCode = "200", description = "Lista de tarefas retornada com sucesso",
             content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
-    @GetMapping("/")
+    @GetMapping("/tasks")
     public ResponseEntity<List<Task>> getAllTasks() {
-        List<Task> tasks = taskService.listAllTasks().getBody();
+        List<Task> tasks = taskService.listAllTasks();
         return ResponseEntity.ok(tasks);
     }
 
