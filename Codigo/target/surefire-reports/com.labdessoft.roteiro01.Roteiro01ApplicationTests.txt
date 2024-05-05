@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.labdessoft.roteiro01.Roteiro01ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.990 s -- in com.labdessoft.roteiro01.Roteiro01ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.496 s -- in com.labdessoft.roteiro01.Roteiro01ApplicationTests
