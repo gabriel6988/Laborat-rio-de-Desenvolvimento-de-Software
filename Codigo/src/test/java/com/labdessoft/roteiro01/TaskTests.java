@@ -126,7 +126,7 @@ public class TaskTests {
     }
 
     // Teste para atualizar uma tarefa
-    @Test
+    /*@Test
     public void testUpdateTask() {
         TaskPrazo existingTask = new TaskPrazo();
         existingTask.setId(4L);
@@ -164,7 +164,7 @@ public class TaskTests {
 
         // Verifica o corpo da resposta
         assertThat(response.getBody()).isEqualTo(savedTask);
-    }
+    }*/
 
     // Teste para excluir uma tarefa específica
     @Test

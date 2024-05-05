@@ -11,11 +11,10 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
-
 import java.util.List;
 
 @RestController
-@RequestMapping("/todo/tasks")
+@RequestMapping("/tasks")
 public class TaskController {
 
     private final TaskService taskService;
@@ -26,18 +25,19 @@ public class TaskController {
     }
 
     @Operation(summary = "Cria uma nova tarefa")
-    @ApiResponse(responseCode = "201", description = "Tarefa criada com sucesso",
-            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
-    @PostMapping("/")
+    @ApiResponse(responseCode = "201", description = "Tarefa criada com sucesso", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
+    @PostMapping(value = "/", consumes = "application/json")
     public ResponseEntity<Task> createTask(@RequestBody Task task) {
+        if (task.getDescription() == null || task.getDescription().trim().isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
         Task createdTask = taskService.addTask(task).getBody();
         return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
     }
 
     @Operation(summary = "Lista todas as tarefas")
-    @ApiResponse(responseCode = "200", description = "Lista de tarefas retornada com sucesso",
-            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
-    @GetMapping("/tasks")
+    @ApiResponse(responseCode = "200", description = "Lista de tarefas retornada com sucesso", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
+    @GetMapping("/")
     public ResponseEntity<List<Task>> getAllTasks() {
         List<Task> tasks = taskService.listAllTasks();
         return ResponseEntity.ok(tasks);
@@ -52,8 +52,7 @@ public class TaskController {
     }
 
     @Operation(summary = "Atualiza uma tarefa existente")
-    @ApiResponse(responseCode = "200", description = "Tarefa atualizada com sucesso",
-            content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
+    @ApiResponse(responseCode = "200", description = "Tarefa atualizada com sucesso", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
     @PutMapping("/{id}")
     public ResponseEntity<Task> updateTask(@PathVariable long id, @RequestBody Task updatedTask) {
         Task task = taskService.updateTask(id, updatedTask).getBody();
