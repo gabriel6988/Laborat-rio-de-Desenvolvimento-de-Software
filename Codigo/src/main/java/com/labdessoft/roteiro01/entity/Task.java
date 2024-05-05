@@ -4,11 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.EnumType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Setter;
 import java.time.LocalDate;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 @Setter
@@ -18,22 +21,19 @@ import java.time.LocalDate;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;// ID da tarefa;
-    private String description;// Descrição da tarefa;
-    private boolean completed;// A tarefa está completada ou não;
-    private Priority priority;// Prioridade da tarefa;
-    private LocalDate creationDate = LocalDate.now();// Data de criação da tarefa;
-    private String status;// Campo para armazenar o status da tarefa;
+    private long id; // ID da tarefa;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @NotEmpty
+    private String description; // Descrição da tarefa;
+    private boolean completed; // A tarefa está completada ou não;
 
-    public Long getId() {
-        return id;
-    }
+    @Enumerated(EnumType.STRING)
+    private Priority priority; // Prioridade da tarefa;
 
-    public enum Priority{
+    private LocalDate creationDate = LocalDate.now(); // Data de criação da tarefa;
+    private String status; // Campo para armazenar o status da tarefa;
+
+    public enum Priority {
         ALTA,
         MEDIA,
         BAIXA
