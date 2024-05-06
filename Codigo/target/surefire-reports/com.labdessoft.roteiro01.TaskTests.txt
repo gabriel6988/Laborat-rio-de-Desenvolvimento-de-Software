@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.labdessoft.roteiro01.TaskTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.265 s -- in com.labdessoft.roteiro01.TaskTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.516 s -- in com.labdessoft.roteiro01.TaskTests
