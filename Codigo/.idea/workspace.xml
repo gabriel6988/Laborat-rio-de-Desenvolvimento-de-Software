@@ -15,6 +15,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -291,6 +292,10 @@
       <workItem from="1714845550026" duration="5381000" />
       <workItem from="1714851027451" duration="914000" />
       <workItem from="1714859831731" duration="1224000" />
+      <workItem from="1714940879289" duration="90000" />
+      <workItem from="1714941152287" duration="32000" />
+      <workItem from="1714946072181" duration="1984000" />
+      <workItem from="1714989850481" duration="3217000" />
     </task>
     <servers />
   </component>
