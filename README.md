@@ -21,3 +21,9 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Diagramas da solução de backend construído, seguindo o padrão C4 Model na linguagem PlantUML.
 * Implementação do Banco de dados.
 * Documentação dos endpoints adotando swaggers.
+## Commit semana 5
+* Desenvolvimento do código.
+* Criação do Dockerfile.
+* Criação do banco de dados no Render.
+* Criação do WebService no Render.
+* Deploy no Render e dockerização.
