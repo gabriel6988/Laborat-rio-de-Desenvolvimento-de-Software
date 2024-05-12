@@ -14,12 +14,29 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22.0.1/lib/src.zip!/java.base/java/lang/System.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22.0.1/lib/src.zip!/java.base/java/lang/Thread.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22.0.1/lib/src.zip!/java.base/java/util/LinkedHashSet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22/lib/src.zip!/java.base/java/lang/Thread.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22/lib/src.zip!/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22/lib/src.zip!/java.base/java/nio/channels/spi/AbstractSelector.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22/lib/src.zip!/java.base/sun/nio/ch/WEPoll.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22/lib/src.zip!/java.base/sun/nio/ch/WEPollSelectorImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/3.2.4/spring-boot-3.2.4-sources.jar!/org/springframework/boot/SpringApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/3.2.4/spring-boot-3.2.4-sources.jar!/org/springframework/boot/WebApplicationType.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/6.1.5/spring-core-6.1.5-sources.jar!/org/springframework/core/io/support/SpringFactoriesLoader.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/6.1.5/spring-core-6.1.5-sources.jar!/org/springframework/util/Assert.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/6.1.5/spring-core-6.1.5-sources.jar!/org/springframework/util/ClassUtils.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/entity/Task.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,41 +56,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Roteiro01ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskDATA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskLIVRE.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskPRAZO.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testDeleteCompletedTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testDeleteTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testListAllTasks.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Roteiro01Application.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcio/Downloads/Laboratorio-de-Desenvolvimento-de-Software-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "JUnit.Roteiro01ApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Roteiro01ApplicationTests.executor": "Run",
+    "JUnit.TaskControllerIntegrationTest.executor": "Run",
+    "JUnit.TaskControllerTests.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTask.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskDATA.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskLIVRE.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskPRAZO.executor": "Run",
+    "JUnit.TaskControllerTests.testDeleteCompletedTasks.executor": "Run",
+    "JUnit.TaskControllerTests.testDeleteTask.executor": "Run",
+    "JUnit.TaskControllerTests.testListAllTasks.executor": "Run",
+    "JUnit.TaskTests.executor": "Run",
+    "JUnit.TaskTests.testAddTaskDATA.executor": "Run",
+    "JUnit.TaskTests.testUpdateTask.executor": "Debug",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Roteiro01Application.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java",
+    "last_opened_file_path": "C:/Users/Marcio/Downloads/Laboratorio-de-Desenvolvimento-de-Software",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.labdessoft.roteiro01.controller" />
@@ -83,8 +111,8 @@
       <recent name="com.labdessoft.roteiro01.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskControllerTests">
-    <configuration name="TaskControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TaskControllerIntegrationTest">
+    <configuration name="Roteiro01ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="roteiro01" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +121,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.Roteiro01ApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskControllerTests.testCreateTaskLIVRE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="roteiro01" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +152,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
-      <option name="METHOD_NAME" value="testCreateTaskLIVRE" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTests.testAddTaskDATA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskTests" />
+      <option name="METHOD_NAME" value="testAddTaskDATA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskControllerTests.testCreateTaskPRAZO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskTests.testUpdateTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="roteiro01" />
       <extension name="coverage">
         <pattern>
@@ -124,40 +183,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
-      <option name="METHOD_NAME" value="testCreateTaskPRAZO" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskControllerTests.testDeleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="roteiro01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
-      <option name="METHOD_NAME" value="testDeleteTask" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskControllerTests.testListAllTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="roteiro01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerTests" />
-      <option name="METHOD_NAME" value="testListAllTasks" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskTests" />
+      <option name="METHOD_NAME" value="testUpdateTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,13 +199,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskControllerTests" />
-        <item itemvalue="JUnit.TaskControllerTests.testDeleteTask" />
-        <item itemvalue="JUnit.TaskControllerTests.testListAllTasks" />
-        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskLIVRE" />
-        <item itemvalue="JUnit.TaskControllerTests.testCreateTaskPRAZO" />
+        <item itemvalue="JUnit.TaskControllerIntegrationTest" />
+        <item itemvalue="JUnit.TaskTests.testUpdateTask" />
+        <item itemvalue="JUnit.TaskTests.testAddTaskDATA" />
+        <item itemvalue="JUnit.TaskTests" />
+        <item itemvalue="JUnit.Roteiro01ApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -212,10 +247,93 @@
       <workItem from="1713031343017" duration="168000" />
       <workItem from="1713048629195" duration="64000" />
       <workItem from="1713052765561" duration="392000" />
+      <workItem from="1713110945771" duration="116000" />
+      <workItem from="1713111123512" duration="489000" />
+      <workItem from="1713112251900" duration="302000" />
+      <workItem from="1713274654967" duration="5297000" />
+      <workItem from="1713284595133" duration="2141000" />
+      <workItem from="1713291556503" duration="2723000" />
+      <workItem from="1713295258337" duration="894000" />
+      <workItem from="1713296310369" duration="114000" />
+      <workItem from="1713297257816" duration="3859000" />
+      <workItem from="1713310981675" duration="4800000" />
+      <workItem from="1713352104991" duration="1385000" />
+      <workItem from="1713355334976" duration="626000" />
+      <workItem from="1713356090354" duration="1159000" />
+      <workItem from="1713439966854" duration="2156000" />
+      <workItem from="1713459161367" duration="3242000" />
+      <workItem from="1713470078808" duration="1443000" />
+      <workItem from="1713782266744" duration="3719000" />
+      <workItem from="1713810293496" duration="2678000" />
+      <workItem from="1714147378746" duration="1256000" />
+      <workItem from="1714183644149" duration="599000" />
+      <workItem from="1714186262990" duration="29000" />
+      <workItem from="1714225036564" duration="6535000" />
+      <workItem from="1714231883739" duration="182000" />
+      <workItem from="1714236862444" duration="1847000" />
+      <workItem from="1714238736446" duration="339000" />
+      <workItem from="1714260847513" duration="6381000" />
+      <workItem from="1714270826982" duration="43000" />
+      <workItem from="1714386149211" duration="3092000" />
+      <workItem from="1714518737616" duration="2073000" />
+      <workItem from="1714524548084" duration="174000" />
+      <workItem from="1714524861815" duration="1028000" />
+      <workItem from="1714527235207" duration="3371000" />
+      <workItem from="1714564301284" duration="5677000" />
+      <workItem from="1714596337944" duration="4402000" />
+      <workItem from="1714681147185" duration="1909000" />
+      <workItem from="1714688402896" duration="42000" />
+      <workItem from="1714737435010" duration="185000" />
+      <workItem from="1714737634544" duration="2029000" />
+      <workItem from="1714739693217" duration="10197000" />
+      <workItem from="1714781526891" duration="7098000" />
+      <workItem from="1714827870467" duration="8238000" />
+      <workItem from="1714842049548" duration="1103000" />
+      <workItem from="1714843327245" duration="1267000" />
+      <workItem from="1714845550026" duration="5381000" />
+      <workItem from="1714851027451" duration="914000" />
+      <workItem from="1714859831731" duration="1224000" />
+      <workItem from="1714940879289" duration="90000" />
+      <workItem from="1714941152287" duration="32000" />
+      <workItem from="1714946072181" duration="1984000" />
+      <workItem from="1714989850481" duration="5526000" />
+      <workItem from="1715345013394" duration="24000" />
+      <workItem from="1715442576096" duration="9752000" />
+      <workItem from="1715479448958" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/service/TaskService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/service/TaskService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/Roteiro01Application.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/repository/TaskRepository.java</url>
+          <line>8</line>
+          <properties class="com.labdessoft.roteiro01.repository.TaskRepository">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
