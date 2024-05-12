@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,51 +56,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Roteiro01ApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Roteiro01ApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskDATA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskLIVRE.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testCreateTaskPRAZO.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testDeleteCompletedTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testDeleteTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskControllerTests.testListAllTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTests.testAddTaskDATA.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTests.testUpdateTask.executor&quot;: &quot;Debug&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Roteiro01Application.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcio/Downloads/ToDoList-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "JUnit.Roteiro01ApplicationTests.contextLoads.executor": "Run",
+    "JUnit.Roteiro01ApplicationTests.executor": "Run",
+    "JUnit.TaskControllerIntegrationTest.executor": "Run",
+    "JUnit.TaskControllerTests.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTask.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskDATA.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskLIVRE.executor": "Run",
+    "JUnit.TaskControllerTests.testCreateTaskPRAZO.executor": "Run",
+    "JUnit.TaskControllerTests.testDeleteCompletedTasks.executor": "Run",
+    "JUnit.TaskControllerTests.testDeleteTask.executor": "Run",
+    "JUnit.TaskControllerTests.testListAllTasks.executor": "Run",
+    "JUnit.TaskTests.executor": "Run",
+    "JUnit.TaskTests.testAddTaskDATA.executor": "Run",
+    "JUnit.TaskTests.testUpdateTask.executor": "Debug",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Roteiro01Application.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Marcio/Downloads/TrabalhoAtual/roteiro01/src/test/java",
+    "last_opened_file_path": "C:/Users/Marcio/Downloads/Laboratorio-de-Desenvolvimento-de-Software",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.labdessoft.roteiro01.controller" />
@@ -110,22 +111,7 @@
       <recent name="com.labdessoft.roteiro01.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Roteiro01Application">
-    <configuration name="Roteiro01ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="roteiro01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
-      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.Roteiro01ApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TaskControllerIntegrationTest">
     <configuration name="Roteiro01ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="roteiro01" />
       <extension name="coverage">
@@ -138,6 +124,21 @@
       <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.Roteiro01ApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roteiro01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labdessoft.roteiro01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.labdessoft.roteiro01" />
+      <option name="MAIN_CLASS_NAME" value="com.labdessoft.roteiro01.TaskControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskControllerIntegrationTest" />
         <item itemvalue="JUnit.TaskTests.testUpdateTask" />
         <item itemvalue="JUnit.TaskTests.testAddTaskDATA" />
         <item itemvalue="JUnit.TaskTests" />
         <item itemvalue="JUnit.Roteiro01ApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.Roteiro01ApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +296,10 @@
       <workItem from="1714940879289" duration="90000" />
       <workItem from="1714941152287" duration="32000" />
       <workItem from="1714946072181" duration="1984000" />
-      <workItem from="1714989850481" duration="3217000" />
+      <workItem from="1714989850481" duration="5526000" />
+      <workItem from="1715345013394" duration="24000" />
+      <workItem from="1715442576096" duration="9752000" />
+      <workItem from="1715479448958" duration="2003000" />
     </task>
     <servers />
   </component>
@@ -322,7 +326,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/labdessoft/roteiro01/repository/TaskRepository.java</url>
-          <line>9</line>
+          <line>8</line>
           <properties class="com.labdessoft.roteiro01.repository.TaskRepository">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
