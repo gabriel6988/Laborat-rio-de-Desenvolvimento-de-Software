@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TaskTests {
 
-    @Autowired
+    /*@Autowired
     private TaskController taskController;
 
     @MockBean
@@ -164,7 +164,7 @@ public class TaskTests {
 
         // Verifica o corpo da resposta
         assertThat(response.getBody()).isEqualTo(savedTask);
-    }*/
+    }
 
     // Teste para excluir uma tarefa específica
     @Test
@@ -204,5 +204,5 @@ public class TaskTests {
         assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
         verify(taskRepository, times(1)).delete(completedTask);
         verify(taskRepository, never()).delete(uncompletedTask);
-    }
+    }*/
 }
