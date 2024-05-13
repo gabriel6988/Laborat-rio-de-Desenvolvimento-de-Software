@@ -27,3 +27,5 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Criação do banco de dados no Render.
 * Criação do WebService no Render.
 * Deploy no Render e dockerização.
+## Commit semana 6
+* Criação dos Testes de Integração.
