@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class TaskServiceTest {
 
-    /*@Mock
+    @Mock
     private TaskRepository taskRepository;
 
     @InjectMocks
@@ -49,5 +49,5 @@ public class TaskServiceTest {
         // Verificar os resultados;
         assertEquals(2, result.size());
         assertEquals(tasks, result);
-    }*/
+    }
 }
