@@ -29,3 +29,5 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Deploy no Render e dockerização.
 ## Commit semana 6
 * Criação dos Testes de Integração.
+## Commit semana 7
+* Criação de Testes Unitários.
