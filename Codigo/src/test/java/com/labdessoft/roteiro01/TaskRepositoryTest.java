@@ -1,4 +1,5 @@
-/*import com.labdessoft.roteiro01.entity.Task;
+/*package com.labdessoft.roteiro01;
+import com.labdessoft.roteiro01.entity.Task;
 import com.labdessoft.roteiro01.repository.TaskRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
