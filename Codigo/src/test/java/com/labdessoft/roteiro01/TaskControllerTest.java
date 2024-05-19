@@ -1,56 +1,45 @@
-/*package com.labdessoft.roteiro01;
+package com.labdessoft.roteiro01;
 
 import com.labdessoft.roteiro01.controller.TaskController;
 import com.labdessoft.roteiro01.entity.Task;
 import com.labdessoft.roteiro01.service.TaskService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import java.util.ArrayList;
 import java.util.List;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
 
-@WebMvcTest(TaskController.class)
-public class TaskControllerTest {
+class TaskControllerTest {
 
-    @Autowired
-    private MockMvc mockMvc;
+    @Mock
+    TaskService taskService;
 
-    @MockBean
-    private TaskService taskService;
+    @InjectMocks
+    TaskController taskController;
 
-    @Test
-    public void shouldReturnAllTasks() throws Exception {
-        Task task1 = new Task(1L, "Task 1", false, Task.Priority.ALTA, null, null);
-        Task task2 = new Task(2L, "Task 2", true, Task.Priority.MEDIA, null, null);
-
-        when(taskService.listAllTasks()).thenReturn(List.of(task1, task2));
-
-        mockMvc.perform(get("/tasks"))
-                .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$[0].description").value("Task 1"))
-                .andExpect(jsonPath("$[1].description").value("Task 2"));
+    @SuppressWarnings("deprecation")
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.initMocks(this);
     }
 
     @Test
-    public void shouldCreateTask() throws Exception {
-        Task task = new Task(1L, "New Task", false, Task.Priority.BAIXA, null, null);
+    void testGetAllTasks() {
+        List<Task> tasks = new ArrayList<>();
+        tasks.add(new Task(1, "Task 1", false, Task.Priority.ALTA, null, null));
+        tasks.add(new Task(2, "Task 2", true, Task.Priority.MEDIA, null, null));
 
-        when(taskService.addTask(any(Task.class))).thenReturn(task);
+        when(taskService.listAllTasks()).thenReturn(tasks);
 
-        mockMvc.perform(post("/tasks")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content("{ \"description\": \"New Task\", \"completed\": false, \"priority\": \"BAIXA\" }"))
-                .andExpect(status().isCreated())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.description").value("New Task"));
+        ResponseEntity<List<Task>> responseEntity = taskController.getAllTasks();
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(tasks, responseEntity.getBody());
     }
-
-    // Add more test cases for other controller methods as needed
-}*/
+}
