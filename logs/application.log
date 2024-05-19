@@ -26,3 +26,31 @@
 2024-05-19T08:03:41.223-03:00  INFO 15752 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-05-19T08:03:41.225-03:00  INFO 15752 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-05-19T08:03:52.516-03:00  INFO 15752 --- [roteiro01] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 403 ms
+2024-05-19T14:01:54.903-03:00  INFO 2984 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : Starting Roteiro01Application using Java 17.0.10 with PID 2984 (C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software\Codigo\target\classes started by Gabriel in C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software)
+2024-05-19T14:01:54.907-03:00  INFO 2984 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T14:01:56.840-03:00  INFO 2984 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T14:01:56.946-03:00  INFO 2984 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2024-05-19T14:01:58.322-03:00  INFO 2984 --- [roteiro01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T14:01:58.345-03:00  INFO 2984 --- [roteiro01] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T14:01:58.346-03:00  INFO 2984 --- [roteiro01] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-19T14:01:58.449-03:00  INFO 2984 --- [roteiro01] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-05-19T14:01:58.450-03:00  INFO 2984 --- [roteiro01] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3479 ms
+2024-05-19T14:01:58.671-03:00  INFO 2984 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T14:01:58.931-03:00  INFO 2984 --- [roteiro01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-19T14:01:58.935-03:00  INFO 2984 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T14:01:58.953-03:00  INFO 2984 --- [roteiro01] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-19T14:01:59.244-03:00  INFO 2984 --- [roteiro01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T14:01:59.319-03:00  INFO 2984 --- [roteiro01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T14:01:59.374-03:00  INFO 2984 --- [roteiro01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T14:01:59.775-03:00  INFO 2984 --- [roteiro01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T14:01:59.850-03:00  WARN 2984 --- [roteiro01] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T14:02:00.789-03:00  INFO 2984 --- [roteiro01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T14:02:00.854-03:00  INFO 2984 --- [roteiro01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T14:02:01.421-03:00  WARN 2984 --- [roteiro01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T14:02:02.550-03:00  INFO 2984 --- [roteiro01] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-19T14:02:02.697-03:00  INFO 2984 --- [roteiro01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2024-05-19T14:02:02.724-03:00  INFO 2984 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : Started Roteiro01Application in 8.322 seconds (process running for 8.998)
+2024-05-19T14:02:03.864-03:00  INFO 2984 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T14:02:03.865-03:00  INFO 2984 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T14:02:03.868-03:00  INFO 2984 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T14:03:16.176-03:00  INFO 2984 --- [roteiro01] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 367 ms

@@ -578,3 +578,47 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2024-05-19T13:39:15.899-03:00  INFO 1136 --- [roteiro01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-19T13:39:15.904-03:00  INFO 1136 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-19T13:39:15.905-03:00  INFO 1136 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T13:58:50.280-03:00  INFO 8840 --- [roteiro01] [main] c.l.roteiro01.Roteiro01ApplicationTests  : Starting Roteiro01ApplicationTests using Java 17.0.10 with PID 8840 (started by Gabriel in C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software\Codigo)
+2024-05-19T13:58:50.283-03:00  INFO 8840 --- [roteiro01] [main] c.l.roteiro01.Roteiro01ApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T13:58:52.472-03:00  INFO 8840 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T13:58:52.545-03:00  INFO 8840 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-05-19T13:58:53.244-03:00  INFO 8840 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T13:58:53.479-03:00  INFO 8840 --- [roteiro01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-19T13:58:53.488-03:00  INFO 8840 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T13:58:53.643-03:00  INFO 8840 --- [roteiro01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T13:58:53.726-03:00  INFO 8840 --- [roteiro01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T13:58:53.779-03:00  INFO 8840 --- [roteiro01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T13:58:54.149-03:00  INFO 8840 --- [roteiro01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T13:58:54.222-03:00  WARN 8840 --- [roteiro01] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T13:58:55.174-03:00  INFO 8840 --- [roteiro01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T13:58:55.240-03:00  INFO 8840 --- [roteiro01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T13:58:56.000-03:00  WARN 8840 --- [roteiro01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T13:58:57.249-03:00  INFO 8840 --- [roteiro01] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-19T13:58:57.335-03:00  INFO 8840 --- [roteiro01] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-19T13:58:57.474-03:00  INFO 8840 --- [roteiro01] [main] c.l.roteiro01.Roteiro01ApplicationTests  : Started Roteiro01ApplicationTests in 7.628 seconds (process running for 8.91)
+2024-05-19T13:58:58.599-03:00  INFO 8840 --- [roteiro01] [SpringApplicationShutdownHook] o.s.b.j.HikariCheckpointRestoreLifecycle : Evicting Hikari connections
+2024-05-19T13:58:58.612-03:00  INFO 8840 --- [roteiro01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T13:58:58.618-03:00  INFO 8840 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T13:58:58.632-03:00  INFO 8840 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T13:59:09.331-03:00  INFO 14360 --- [roteiro01] [main] c.l.roteiro01.TaskControllerTest         : Starting TaskControllerTest using Java 17.0.10 with PID 14360 (started by Gabriel in C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software\Codigo)
+2024-05-19T13:59:09.333-03:00  INFO 14360 --- [roteiro01] [main] c.l.roteiro01.TaskControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T13:59:12.066-03:00  INFO 14360 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T13:59:12.142-03:00  INFO 14360 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-05-19T13:59:15.071-03:00  INFO 14360 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T13:59:15.461-03:00  INFO 14360 --- [roteiro01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-19T13:59:15.471-03:00  INFO 14360 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T13:59:15.774-03:00  INFO 14360 --- [roteiro01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T13:59:15.935-03:00  INFO 14360 --- [roteiro01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T13:59:16.050-03:00  INFO 14360 --- [roteiro01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T13:59:16.645-03:00  INFO 14360 --- [roteiro01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T13:59:16.799-03:00  WARN 14360 --- [roteiro01] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T13:59:18.392-03:00  INFO 14360 --- [roteiro01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T13:59:18.610-03:00  INFO 14360 --- [roteiro01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T13:59:19.580-03:00  WARN 14360 --- [roteiro01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T13:59:21.585-03:00  INFO 14360 --- [roteiro01] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-19T13:59:21.672-03:00  INFO 14360 --- [roteiro01] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-19T13:59:21.832-03:00  INFO 14360 --- [roteiro01] [main] c.l.roteiro01.TaskControllerTest         : Started TaskControllerTest in 12.971 seconds (process running for 14.227)
+2024-05-19T13:59:22.512-03:00  INFO 14360 --- [roteiro01] [SpringApplicationShutdownHook] o.s.b.j.HikariCheckpointRestoreLifecycle : Evicting Hikari connections
+2024-05-19T13:59:22.527-03:00  INFO 14360 --- [roteiro01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T13:59:22.531-03:00  INFO 14360 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T13:59:22.540-03:00  INFO 14360 --- [roteiro01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
