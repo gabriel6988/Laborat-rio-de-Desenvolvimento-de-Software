@@ -37,7 +37,7 @@ public class TaskControllerIntegrationTest {
                 .contentType(ContentType.JSON)
                 .body(task)
                 .when()
-                .post("/tasks")
+                .post("/api/tasks/")
                 .then()
                 .statusCode(201);
     }
@@ -47,7 +47,7 @@ public class TaskControllerIntegrationTest {
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/tasks")
+                .get("/api/tasks/")
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON);
@@ -60,7 +60,7 @@ public class TaskControllerIntegrationTest {
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .patch("/tasks/{taskId}/completed", taskId)
+                .patch("/api/tasks/{taskId}/completed", taskId)
                 .then()
                 .statusCode(204);
     }
@@ -75,14 +75,14 @@ public class TaskControllerIntegrationTest {
                 .contentType(ContentType.JSON)
                 .body(updatedTask)
                 .when()
-                .put("/tasks/{taskId}", taskId)
+                .put("/api/tasks/{taskId}", taskId)
                 .then()
                 .statusCode(200);
 
         Task retrievedTask = given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/tasks/{taskId}", taskId)
+                .get("/api/tasks/{taskId}", taskId)
                 .then()
                 .statusCode(200)
                 .extract().body().as(Task.class);
@@ -98,7 +98,7 @@ public class TaskControllerIntegrationTest {
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/tasks/{taskId}", taskId)
+                .delete("/api/tasks/{taskId}", taskId)
                 .then()
                 .statusCode(404);
     }
@@ -116,14 +116,14 @@ public class TaskControllerIntegrationTest {
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/tasks/completed")
+                .delete("/api/tasks/completed")
                 .then()
                 .statusCode(200);
 
         List<Task> tasks = given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/tasks")
+                .get("/api/tasks/")
                 .then()
                 .statusCode(200)
                 .extract().body().jsonPath().getList(".", Task.class);
