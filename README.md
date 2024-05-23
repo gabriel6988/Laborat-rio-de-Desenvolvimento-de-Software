@@ -31,3 +31,5 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Criação dos Testes de Integração.
 ## Commit semana 7
 * Criação de Testes Unitários.
+## Commit semana 8
+* Atualização dos Testes de Integração.
