@@ -147,7 +147,7 @@ class TaskControllerTest {
         when(taskRepository.findById(4L)).thenReturn(Optional.of(existingTask));
 
         // Invoca o método de atualização;
-        ResponseEntity<Task> response = taskController.updateTask(4L, updatedTask);
+        ResponseEntity<Task> response = taskController.updateTask(updatedTask);
 
         // Verifica o código de resposta HTTP;
         assertEquals(HttpStatus.OK, response.getStatusCode());
