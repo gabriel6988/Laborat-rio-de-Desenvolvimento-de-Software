@@ -33,3 +33,4 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Criação de Testes Unitários.
 ## Commit semana 8
 * Atualização dos Testes de Integração.
+* Criação da tag "EntregaLab3".
