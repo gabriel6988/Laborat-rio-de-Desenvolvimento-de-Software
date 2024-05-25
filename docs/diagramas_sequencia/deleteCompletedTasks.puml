@@ -1,0 +1,35 @@
+@startuml
+title Diagrama de Sequência para DELETE /tasks/completed
+
+actor Usuário
+Boundary Frontend
+Boundary SpringBoot
+Control TaskController
+Entity Task
+Participant TaskService
+Participant TaskRepository
+
+activate SpringBoot
+Usuário -> Frontend: Solicita Excluir todas as tarefas concluídas
+activate Frontend
+Frontend -> SpringBoot: DELETE /tasks/completed
+activate SpringBoot
+SpringBoot -> TaskController: deleteCompletedTasks()
+activate TaskController
+TaskController -> TaskService: deleteCompletedTasks()
+activate TaskService
+TaskService -> TaskRepository: findAll()
+activate TaskRepository
+TaskRepository --> TaskService: Lista de todas as tarefas
+TaskService -> TaskRepository: delete(Tasks)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefas concluídas excluídas com sucesso
+deactivate TaskRepository
+deactivate TaskService
+deactivate TaskController
+deactivate SpringBoot
+SpringBoot --> Frontend: Resposta sem conteúdo
+deactivate Frontend
+Usuário <-- Frontend: Recebe resposta sem conteúdo
+deactivate Usuário
+@enduml

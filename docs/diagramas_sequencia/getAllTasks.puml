@@ -1,0 +1,34 @@
+@startuml
+title Diagrama de Sequência para GET /tasks
+
+actor Usuário
+Boundary Frontend
+Boundary SpringBoot
+Control TaskController
+Entity Task
+Participant TaskService
+Participant TaskRepository
+
+activate SpringBoot
+Usuário -> Frontend: Solicita Listar todas as Tarefas
+activate Frontend
+Frontend -> SpringBoot: GET /tasks
+activate SpringBoot
+SpringBoot -> TaskController: getAllTasks()
+activate TaskController
+TaskController -> TaskService: listAllTasks()
+activate TaskService
+TaskService -> TaskRepository: findAll()
+activate TaskRepository
+TaskRepository -> TaskService: Retorna lista de tarefas
+deactivate TaskRepository
+TaskService -> TaskController: Retorna lista de tarefas
+deactivate TaskService
+TaskController -> SpringBoot: ResponseEntity.ok(lista de tarefas)
+deactivate TaskController
+SpringBoot -> Frontend: Retorna lista de tarefas
+deactivate SpringBoot
+Frontend -> Usuário: Exibe lista de tarefas
+deactivate Frontend
+deactivate Usuário
+@enduml
