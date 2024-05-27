@@ -40,7 +40,7 @@ public class TaskControllerIntegrationTest {
             .contentType(ContentType.JSON)
             .body(task)
             .when()
-            .post("/tasks/")
+            .post("/api/tasks/")
             .then()
             .statusCode(201); // Tarefa criada com sucesso;
     }*/
@@ -82,7 +82,7 @@ public class TaskControllerIntegrationTest {
             .contentType(ContentType.JSON)
             .body(newTask)
             .when()
-            .post("/tasks/")
+            .post("/api/tasks/")
             .then()
             .statusCode(201)
             .extract().body().as(Task.class);
@@ -102,7 +102,7 @@ public class TaskControllerIntegrationTest {
             .contentType(ContentType.JSON)
             .body(updatedTask)
             .when()
-            .put("/tasks/")
+            .put("/api/tasks/")
             .then()
             .statusCode(200);
 
@@ -110,7 +110,7 @@ public class TaskControllerIntegrationTest {
         Task retrievedTask = given()
             .contentType(ContentType.JSON)
             .when()
-            .get("/tasks/{taskId}", taskId)
+            .get("/api/tasks/{taskId}", taskId)
             .then()
             .statusCode(200)
             .extract().body().as(Task.class);
