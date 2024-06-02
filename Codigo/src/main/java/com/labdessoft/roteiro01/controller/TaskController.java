@@ -11,6 +11,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -31,6 +33,8 @@ public class TaskController {
         if (task.getDescription() == null || task.getDescription().trim().isEmpty()) {
             return ResponseEntity.badRequest().build();
         }
+        task.setCreationDate(LocalDate.now());
+        task.setStatus("Prevista");
         Task createdTask = taskService.addTask(task).getBody();
         return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
     }
@@ -53,8 +57,9 @@ public class TaskController {
 
     @Operation(summary = "Atualiza uma tarefa existente")
     @ApiResponse(responseCode = "200", description = "Tarefa atualizada com sucesso", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Task.class)))
-    @PutMapping("/{id}")
-    public ResponseEntity<Task> updateTask(@PathVariable long id, @RequestBody Task updatedTask) {
+    @PutMapping("/")
+    public ResponseEntity<Task> updateTask(@RequestBody Task updatedTask) {
+        long id = updatedTask.getId();
         Task task = taskService.updateTask(id, updatedTask).getBody();
         return ResponseEntity.ok(task);
     }

@@ -21,3 +21,20 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Diagramas da solução de backend construído, seguindo o padrão C4 Model na linguagem PlantUML.
 * Implementação do Banco de dados.
 * Documentação dos endpoints adotando swaggers.
+## Commit semana 5
+* Desenvolvimento do código.
+* Criação do Dockerfile.
+* Criação do banco de dados no Render.
+* Criação do WebService no Render.
+* Deploy no Render e dockerização.
+## Commit semana 6
+* Criação dos Testes de Integração.
+## Commit semana 7
+* Criação de Testes Unitários.
+## Commit semana 8
+* Atualização dos Testes de Integração.
+* Criação da tag "EntregaLab3".
+* Criação dos Diagramas de Sequência.
+## Commit semana 9
+* Merge das branches.
+* Criação da aplicação React.js online.

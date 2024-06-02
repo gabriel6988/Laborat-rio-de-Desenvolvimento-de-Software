@@ -1,0 +1,35 @@
+@startuml
+title Diagrama de Sequência para PUT /tasks/
+
+actor Usuário
+Boundary Frontend
+Boundary SpringBoot
+Control TaskController
+Entity Task
+Participant TaskService
+Participant TaskRepository
+
+activate SpringBoot
+Usuário -> Frontend: Solicita Atualizar uma tarefa existente
+activate Frontend
+Frontend -> SpringBoot: PUT /tasks/
+activate SpringBoot
+SpringBoot -> TaskController: updateTask(Task)
+activate TaskController
+TaskController -> TaskService: updateTask(id, updatedTask)
+activate TaskService
+TaskService -> TaskRepository: findById(id)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefa encontrada
+TaskService -> TaskRepository: save(Task)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefa atualizada com sucesso
+deactivate TaskRepository
+deactivate TaskService
+deactivate TaskController
+deactivate SpringBoot
+SpringBoot --> Frontend: Retorna tarefa atualizada
+deactivate Frontend
+Usuário <-- Frontend: Recebe tarefa atualizada
+deactivate Usuário
+@enduml

@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Setter;
 import java.time.LocalDate;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Setter
@@ -24,7 +25,9 @@ public class Task {
     private long id; // ID da tarefa;
 
     @NotEmpty
+    @Size(min = 1)
     private String description; // Descrição da tarefa;
+    
     private boolean completed; // A tarefa está completada ou não;
 
     @Enumerated(EnumType.STRING)

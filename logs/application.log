@@ -1,0 +1,28 @@
+2024-05-27T07:22:30.268-03:00  INFO 5068 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : Starting Roteiro01Application using Java 17.0.10 with PID 5068 (C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software\Codigo\target\classes started by Gabriel in C:\Users\Marcio\Downloads\TrabalhoAtual\Laboratorio-de-Desenvolvimento-de-Software)
+2024-05-27T07:22:30.289-03:00  INFO 5068 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : No active profile set, falling back to 1 default profile: "default"
+2024-05-27T07:22:32.753-03:00  INFO 5068 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-27T07:22:32.861-03:00  INFO 5068 --- [roteiro01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-05-27T07:22:33.846-03:00  INFO 5068 --- [roteiro01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-27T07:22:33.867-03:00  INFO 5068 --- [roteiro01] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27T07:22:33.867-03:00  INFO 5068 --- [roteiro01] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-27T07:22:33.994-03:00  INFO 5068 --- [roteiro01] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-05-27T07:22:33.995-03:00  INFO 5068 --- [roteiro01] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3609 ms
+2024-05-27T07:22:34.211-03:00  INFO 5068 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27T07:22:34.524-03:00  INFO 5068 --- [roteiro01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-27T07:22:34.526-03:00  INFO 5068 --- [roteiro01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27T07:22:34.543-03:00  INFO 5068 --- [roteiro01] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-27T07:22:34.922-03:00  INFO 5068 --- [roteiro01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-27T07:22:35.054-03:00  INFO 5068 --- [roteiro01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-27T07:22:35.113-03:00  INFO 5068 --- [roteiro01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-27T07:22:35.503-03:00  INFO 5068 --- [roteiro01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-27T07:22:35.578-03:00  WARN 5068 --- [roteiro01] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-27T07:22:36.701-03:00  INFO 5068 --- [roteiro01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-27T07:22:36.792-03:00  INFO 5068 --- [roteiro01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-27T07:22:37.414-03:00  WARN 5068 --- [roteiro01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-27T07:22:38.588-03:00  INFO 5068 --- [roteiro01] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-27T07:22:38.690-03:00  INFO 5068 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27T07:22:38.692-03:00  INFO 5068 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27T07:22:38.695-03:00  INFO 5068 --- [roteiro01] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-27T07:22:38.780-03:00  INFO 5068 --- [roteiro01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2024-05-27T07:22:38.814-03:00  INFO 5068 --- [roteiro01] [main] c.l.roteiro01.Roteiro01Application       : Started Roteiro01Application in 9.268 seconds (process running for 10.179)
+2024-05-27T07:23:14.374-03:00  INFO 5068 --- [roteiro01] [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 815 ms

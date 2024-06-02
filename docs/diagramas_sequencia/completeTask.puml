@@ -1,0 +1,37 @@
+@startuml
+title Diagrama de Sequência para PATCH /tasks/{id}/completed
+
+actor Usuário
+Boundary Frontend
+Boundary SpringBoot
+Control TaskController
+Entity Task
+Participant TaskService
+Participant TaskRepository
+
+activate SpringBoot
+Usuário -> Frontend: Solicita Marcar tarefa como concluída
+activate Frontend
+Frontend -> SpringBoot: PATCH /tasks/{id}/completed
+activate SpringBoot
+SpringBoot -> TaskController: completeTask(id)
+activate TaskController
+TaskController -> TaskService: completeTask(id)
+activate TaskService
+TaskService -> TaskRepository: findById(id)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefa encontrada
+TaskService -> TaskRepository: save(Tarefa marcada como concluída)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefa salva
+deactivate TaskRepository
+TaskService --> TaskController: Retorna tarefa completada
+deactivate TaskService
+TaskController -> SpringBoot: ResponseEntity.ok(tarefa completada)
+deactivate TaskController
+SpringBoot --> Frontend: Retorna tarefa completada
+deactivate SpringBoot
+Frontend -> Usuário: Exibe tarefa completada
+deactivate Frontend
+deactivate Usuário
+@enduml

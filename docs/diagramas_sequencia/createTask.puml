@@ -1,0 +1,32 @@
+@startuml
+title Diagrama de Sequência para POST /tasks
+
+actor Usuário
+Boundary Frontend
+Boundary SpringBoot
+Control TaskController
+Entity Task
+Participant TaskService
+Participant TaskRepository
+
+activate SpringBoot
+Usuário -> Frontend: Solicita Criar uma nova Tarefa
+activate Frontend
+Frontend -> SpringBoot: POST /tasks
+activate SpringBoot
+SpringBoot -> TaskController: createTask(Task)
+activate TaskController
+TaskController -> TaskService: addTask(Task)
+activate TaskService
+TaskService -> TaskRepository: save(Task)
+activate TaskRepository
+TaskRepository --> TaskService: Tarefa criada com sucesso
+deactivate TaskRepository
+deactivate TaskService
+deactivate TaskController
+deactivate SpringBoot
+SpringBoot --> Frontend: Retorna nova Tarefa criada
+deactivate Frontend
+Usuário <-- Frontend: Recebe nova Tarefa criada
+deactivate Usuário
+@enduml
