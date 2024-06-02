@@ -35,3 +35,6 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Atualização dos Testes de Integração.
 * Criação da tag "EntregaLab3".
 * Criação dos Diagramas de Sequência.
+## Commit semana 9
+* Merge das branches.
+* Criação da aplicação React.js online.
