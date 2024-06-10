@@ -38,3 +38,5 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 ## Commit semana 9
 * Merge das branches.
 * Criação da aplicação React.js online.
+## Commit semana 10
+* Correção do front-end da aplicação React.js online.
