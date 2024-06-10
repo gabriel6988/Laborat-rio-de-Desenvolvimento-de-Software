@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background: transparent;
+    background: #0b2b1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 h1 {
-    color: #fff;
+    color: #72a24d;
     margin-bottom: 0.5rem;
     font-size: 1.75rem;
 }
@@ -32,7 +32,7 @@ h1 {
 .todo-input {
     outline: none;
     background: none;
-    border: 1px solid #8758ff;
+    border: 1px solid #72a24d;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -43,7 +43,7 @@ h1 {
     color: #ffffff4d;
 }
 .todo-btn {
-    background: #8758ff;
+    background: #72a24d;
     color: #fff;
     border: none;
     padding: 0.55rem;
