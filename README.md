@@ -40,3 +40,5 @@ Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de
 * Criação da aplicação React.js online.
 ## Commit semana 10
 * Correção do front-end da aplicação React.js online.
+* Merge das branches.
+* Atualização do back-end da aplicação React.js online.
