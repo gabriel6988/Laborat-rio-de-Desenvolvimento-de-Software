@@ -5,13 +5,13 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const TodoWrapper = () => {
     const [todos, setTodos] = useState([
-        { id: 1, task: 'Tarefa exemplo', completed: false }
+        { id: 1, description: 'Tarefa exemplo', completed: false }
     ]);
 
     const addTodo = (todo) => {
         setTodos([
             ...todos,
-            { id: uuidv4(), task: todo, completed: false },
+            { id: uuidv4(), task: description, completed: false },
         ]);
     };
 
