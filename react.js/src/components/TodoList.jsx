@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faPenToSquare, faSave } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faPenToSquare, faCheck } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 
 export const TodoList = ({ task, toggleComplete, deleteTodo, editTodo }) => {
@@ -25,10 +25,7 @@ export const TodoList = ({ task, toggleComplete, deleteTodo, editTodo }) => {
                     className="todo-edit-input"
                 />
             ) : (
-                <p
-                    className={`todo-text ${task.completed ? "completed" : "incompleted"}`}
-                    onClick={() => toggleComplete(task.id)}
-                >
+                <p className={`todo-text ${task.completed ? "completed" : ""}`}>
                     {task.description}
                 </p>
             )}
@@ -39,24 +36,33 @@ export const TodoList = ({ task, toggleComplete, deleteTodo, editTodo }) => {
                         onClick={handleEditSubmit}
                         aria-label="Save changes"
                     >
-                        <FontAwesomeIcon icon={faSave} />
-                    </button>
-                ) : (
-                    <button
-                        className="todo-edit-button"
-                        onClick={() => setIsEditing(true)}
-                        aria-label="Edit task"
-                    >
                         <FontAwesomeIcon icon={faPenToSquare} />
                     </button>
+                ) : (
+                    <>
+                        <button
+                            className="todo-edit-button"
+                            onClick={() => setIsEditing(true)}
+                            aria-label="Edit task"
+                        >
+                            <FontAwesomeIcon icon={faPenToSquare} />
+                        </button>
+                        <button
+                            className="todo-complete-button"
+                            onClick={() => toggleComplete(task.id)}
+                            aria-label="Toggle completion"
+                        >
+                            <FontAwesomeIcon icon={faCheck} />
+                        </button>
+                        <button
+                            className="todo-delete-button"
+                            onClick={() => deleteTodo(task.id)}
+                            aria-label={`Delete ${task.description}`}
+                        >
+                            <FontAwesomeIcon className="todo-delete-icon" icon={faTrash} />
+                        </button>
+                    </>
                 )}
-                <button
-                    className="todo-delete-button"
-                    onClick={() => deleteTodo(task.id)}
-                    aria-label={`Delete ${task.description}`}
-                >
-                    <FontAwesomeIcon className="todo-delete-icon" icon={faTrash} />
-                </button>
             </div>
         </div>
     );
