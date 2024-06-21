@@ -6,18 +6,18 @@ import { v4 as uuidv4 } from 'uuid';
 export const TodoWrapperService = () => {
     const [todos, setTodos] = useState([]);
 
-    // Load todos from localStorage on mount
+    // Carrega as tarefas do localStorage;
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
         setTodos(savedTodos);
     }, []);
 
-    // Save todos to localStorage whenever they change
+    // Salva as tarefas no localStorage quando elas são alteradas;
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos));
     }, [todos]);
 
-    // Function to add a new todo
+    // Função para adicionar uma nova tarefa;
     const addTodo = (todoDescription) => {
         const newTodo = {
             id: uuidv4(),
@@ -27,14 +27,14 @@ export const TodoWrapperService = () => {
         setTodos([...todos, newTodo]);
     };
 
-    // Function to toggle completion status
+    // Função para alternar o status de conclusão;
     const toggleComplete = (id) => {
         setTodos(todos.map((todo) =>
             todo.id === id ? { ...todo, completed: !todo.completed } : todo
         ));
     };
 
-    // Function to delete a todo
+    // Função para deletar a tarefa;
     const deleteTask = (id) => {
         setTodos(todos.filter((todo) => todo.id !== id));
     };
