@@ -1,5 +1,5 @@
 # Laboratorio-de-Desenvolvimento-de-Software
-Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de Software. Desenvolvimento Laboratório II – 20 pontos.
+Repositório para os trabalhos da matéria de Laboratório de Desenvolvimento de Software.
 ## Commit semana 1
 * Implementação dos três tipos de tarefas (DATA, PRAZO e LIVRE).
 * Implementação dos três níveis de prioridades (Alta, Média e Baixa).
